@@ -1,0 +1,43 @@
+
+
+# Terraform
+# Ignorar arquivos e diretórios que o Terraform usa localmente
+.terraform/
+.terraform.lock.hcl
+
+# Evitar que os arquivos de estado sejam versionados
+terraform.tfstate
+terraform.tfstate.backup
+
+# Crash logs do Terraform
+crash.log
+
+# Evitar que arquivos de variáveis sensíveis sejam versionados
+*.tfvars
+*.tfvars.json
+
+# Planos de execução do Terraform que podem conter informações sensíveis
+terraform.tfplan
+
+# Arquivos de saída temporários do Terraform
+*.backup
+*.log
+
+# Lambda
+# Ignorar arquivos de pacotes temporários
+lambda.zip
+*.zip
+
+# Evitar arquivos de compilação, pacotes e dependências locais
+node_modules/
+dist/
+build/
+
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
